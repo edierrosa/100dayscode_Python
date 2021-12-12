@@ -26,13 +26,13 @@ print("Your mission is to find the treasure.")
 # https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
 # Level 1
-level_1 = (input('You\'re at a crossroad. Where do you want to go? Type "left" or "right"')).lower()
+level_1 = input('You\'re at a crossroad. Where do you want to go? Type "left" or "right"\n').lower()
 if level_1 == "left":
     print("Good choice!")
-    level_2 = (input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across.')).lower()
+    level_2 = input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across.\n').lower()
     if level_2 == "wait":
         print("Well done!")
-        level_3 = (input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?")).lower()
+        level_3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n").lower()
         if level_3 == "yellow":
             print("You found the treasure! You Win!")
         elif level_3 == "red":
