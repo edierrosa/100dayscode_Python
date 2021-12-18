@@ -30,7 +30,7 @@ scissors = '''
 '''
 options = [rock, paper, scissors]
 
-# Gets user's choice
+# Gets user's choice and checks if it's a valid entry
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 if user_choice < 0 or user_choice >= 3:
     print("Impossible choice mate! Try again: 0, 1 or 2.")
