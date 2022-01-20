@@ -2,27 +2,23 @@
 import calculator_art
 import os
 
+
 # Defines addition function
-
-
 def add(n1, n2):
     return n1 + n2
 
+
 # Defines subtration function
-
-
 def sub(n1, n2):
     return n1 - n2
 
+
 # Defines multiplication function
-
-
 def mult(n1, n2):
     return n1 * n2
 
+
 # Defines division function
-
-
 def div(n1, n2):
     return n1 / n2
 
@@ -35,9 +31,8 @@ operations = {
     "/": div,
 }
 
+
 # Defines calculation function
-
-
 def calculate(num1=None):
     # Asks for input
     if num1 == None:
@@ -61,7 +56,7 @@ while running:
         number = calculate()
     else:
         run = input(
-            f"Type 'y' to continue calculating with {number}, 'n' to start a new calculation, or 'e' to exit: ")
+            f"Type 'y' to continue calculating with {number}, 'n' to start a new calculation, or any other key to exit: ")
         if run == "y":
             number = calculate(num1=number)
         elif run == "n":
