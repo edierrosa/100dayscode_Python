@@ -2,7 +2,7 @@ from turtle import Screen
 import time
 from snake import Snake
 from food import Food
-from score import Score
+from snakescoreboard import Score
 
 
 screen = Screen()

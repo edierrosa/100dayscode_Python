@@ -2,7 +2,7 @@ from turtle import Screen
 from ball import Ball
 from paddle import Paddle
 import time
-from scoreboard import Scoreboard
+from pongscoreboard import Scoreboard
 
 # Set game screen
 screen = Screen()
