@@ -39,13 +39,13 @@ while start_game:
 
     # Collision with wall.
     if snake.head.xcor() > XY_MAX or snake.head.xcor() < XY_MIN or snake.head.ycor() > XY_MAX or snake.head.ycor() < XY_MIN:
-        start_game = False
-        game_score.game_over()
+        game_score.reset()
+        snake.reset()
 
     # Collision with the tail.
     for _ in snake.sections[1:]:
         if snake.head.distance(_) < 10:
-            start_game = False
-            game_score.game_over()
+            game_score.reset()
+            snake.reset()
 
 screen.exitonclick()

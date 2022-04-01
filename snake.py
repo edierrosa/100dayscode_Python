@@ -27,6 +27,14 @@ class Snake:
         self.section.goto(position)
         self.sections.append(self.section)
 
+    def reset(self):
+        """Reset snake"""
+        for _ in self.sections:
+            _.goto(1000, 1000)
+        self.sections.clear()
+        self.create_snake()
+        self.head = self.sections[0]
+
     def extend(self):
         "Extend the size of the snake"
         self.add_section(self.sections[-1].position())
