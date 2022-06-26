@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Libre+Franklin:wght@200&display=swap');
+
+:root {
+    color: #746D75;
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 200px auto 0;
+}
+
+#panza-wiki {
+    font-size: inherit;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    font-size: 1.4rem;
+    color: #746D75;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF3864;
+}
+
+p {
+    line-height: 2;
+}
+
+img {
+    width: 15%;
+}
+
+hr {
+    border: dotted 6px;
+    border-bottom: none;
+    clear: both;
+    margin: 100px auto;
+    width: 4%;
+}
+
+.top-container {
+    background-color: #F8F8F4;
+    height: 100vh;
+    position: relative;
+    padding-top: 200px;
+}
+
+.middle-container {
+    background-color: #F2ECE4;
+    padding: 100px 0;
+}
+
+.bottom-container {
+    background-color: #EFE5DC;
+    padding: 50px 0 20px;
+}
+
+.skill-row {
+    margin: 100px auto;
+    width: 50%;
+    text-align: left;
+}
+
+.personal-assistant {
+    float: left;
+    margin-right: 30px;
+}
+
+.open-book {
+    float: right;
+    margin-left: 30px;
+}
+
+.personal-intro {
+    margin: auto;
+    width: 50%;
+}
+
+.contact-message {
+    width: 50%;
+    margin: 30px auto 60px;
+}
+
+.btn {
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: "Fira Code", monospace;
+    color: #F2ECE4;
+    font-size: 1rem;
+    background: #746D75;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #F2ECE4;
+    background: #FF3864;
+    text-decoration: none;
+}
+
+.copyright-text {
+    font-size: 0.8rem;
+}
