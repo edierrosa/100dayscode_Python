@@ -30,6 +30,7 @@ def get_amazon_price(product_url=amz_product_url, headers=amz_headers):
     return amz_price, amz_product_title
 
 
+# Email notifier
 def send_email(msg, emails):
     with SMTP(smtp_mail, port=587) as connection:
         connection.starttls()
@@ -38,6 +39,7 @@ def send_email(msg, emails):
             connection.sendmail(from_addr=user_mail, to_addrs=email, msg=msg)
 
 
+# Price trigger
 def check_price(target_price, emails, product_link=amz_product_url):
     current_price, product_title = get_amazon_price()
     if current_price <= target_price:
