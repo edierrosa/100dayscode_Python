@@ -3,7 +3,6 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import time
-import re
 
 # Set service and webdriver for chrome
 service = ChromeService(executable_path=ChromeDriverManager().install())
