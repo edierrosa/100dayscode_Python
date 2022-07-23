@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
 # You can hard code driver location
-# chrome_driver_path = "/Users/Agilulfo/Coding/chromedriver_win32/chromedriver.exe"
+# chrome_driver_path = ""
 # service = ChromeService(executable_path=chrome_driver_path)
 
 # product_url = "https://www.amazon.com/Bedtime-Originals-Twinkle-Elephant-Plush/dp/B0771V1JZX/?_encoding=UTF8&pd_rd_w=x0jk1&content-id=amzn1.sym.0a0fec03-b408-45eb-8e57-18d0d31850f9&pf_rd_p=0a0fec03-b408-45eb-8e57-18d0d31850f9&pf_rd_r=D7988WQD4NYSPTCE69AM&pd_rd_wg=68kFF&pd_rd_r=bfe74ffc-d49b-4561-b2dc-623662076fa4&ref_=pd_gw_unk"
