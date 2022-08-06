@@ -94,3 +94,11 @@ while True:
         except NoSuchElementException:
             time.sleep(2)
             ActionChains(driver).send_keys(Keys.ESCAPE).perform()
+    except TimeoutException:
+        time.sleep(2)
+        wait.until(EC.element_to_be_clickable(
+            (By.XPATH, '//span[text()="Maybe later"]'))).click()
+        print("Maybe later")
+
+
+driver.quit()
