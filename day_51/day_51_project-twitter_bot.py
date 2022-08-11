@@ -26,7 +26,7 @@ st_url = os.environ["ST_URL"]
 service = ChromeService(executable_path=ChromeDriverManager().install())
 chrome_options = Options()
 chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
-chrome_options.add_experimental_option("detach", True)
+# chrome_options.add_experimental_option("detach", True)
 
 
 class TwitterBot:
