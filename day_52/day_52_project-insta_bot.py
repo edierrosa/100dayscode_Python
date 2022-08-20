@@ -108,7 +108,7 @@ class InstaBot:
 
 bot = InstaBot()
 bot.login()
-bot.find_followers("some account")
-bot.find_following("some account")
+bot.find_followers("account")
+bot.find_following("account")
 bot.not_follow_back()
 bot.driver.quit()

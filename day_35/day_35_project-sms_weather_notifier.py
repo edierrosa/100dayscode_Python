@@ -17,7 +17,7 @@ tw_to_number = os.environ["TW_TO_NUMBER"]
 
 # OW parameters
 parameters = {
-    "lat": "your_latitude_integer"
+    "lat": "your_latitude_integer",
     "lon": "your_longitude_integer",
     "appid": ow_api_key,
     "exclude": "current,minute,daily",
