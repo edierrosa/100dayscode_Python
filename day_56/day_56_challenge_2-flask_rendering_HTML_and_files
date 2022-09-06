@@ -1,0 +1,21 @@
+from flask import Flask, render_template
+from pathlib import Path
+
+
+static_path = Path("absolute path to folder")
+
+app = Flask(__name__, template_folder="../day_44", static_url_path="/",
+            static_folder=static_path)
+
+# print(app.static_url_path)
+# print(app.static_folder)
+# print(app.root_path)
+
+
+@app.route("/")
+def home():
+    return render_template("day_44_project-panza_site.html")
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
