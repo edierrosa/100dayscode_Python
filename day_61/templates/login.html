@@ -1,0 +1,38 @@
+{# extends "index.html" #} {% extends "index_bootstrap.html" %} {% import
+"bootstrap/wtf.html" as wtf %} {% block title %}
+<title>Login</title>
+{% endblock %} {% block content %}
+<div class="container">
+  <h1>Login</h1>
+
+  <!-- Log in form -->
+  {#
+  <form method="POST" action="{{ url_for('login') }}" novalidate>
+    {{ login_form.csrf_token }}
+
+    <p>
+      {{ login_form.email.label }} <br />
+      {{ login_form.email(size=30) }} {% if login_form.email.errors: %} {% for
+      error in login_form.email.errors: %}
+      <span>{{ error }}</span>
+      {% endfor %} {% endif %}
+    </p>
+    <p>
+      {{ login_form.password.label }} <br />
+      {{ login_form.password(size=30) }} {% if login_form.password.errors: %} {%
+      for error in login_form.password.errors: %}
+      <span>{{ error }}</span>
+      {% endfor %} {% endif %}
+    </p>
+    {{ login_form.submit }}
+  </form>
+  #}
+
+  <!-- Log in form using WtForms support -->
+  <div class="row">
+    <div class="col-md-4 col-sm-12">
+      {{ wtf.quick_form(login_form, novalidate=True) }}
+    </div>
+  </div>
+</div>
+{% endblock %}
