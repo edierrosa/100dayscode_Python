@@ -1,4 +1,3 @@
-from turtle import title
 from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
@@ -12,7 +11,7 @@ from pathlib import Path
 
 
 # Environment Variables
-dotenv_path = Path("/Users/Agilulfo/python/py310/.virtualenvs/100daysCode/day_63.txt")
+dotenv_path = Path("path to dotenv")
 dotenv.load_dotenv(dotenv_path=dotenv_path)
 tmdb_apikey = os.environ["API_KEY"]
 tmdb_token = os.environ["API_READ_TOKEN"]
@@ -20,7 +19,7 @@ tmdb_token = os.environ["API_READ_TOKEN"]
 
 # Flask app
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = 'your secret key'
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///movie-list.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
