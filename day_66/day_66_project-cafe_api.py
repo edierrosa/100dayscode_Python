@@ -9,7 +9,7 @@ app = Flask(__name__)
 API_KEY = "TopSecretAPIKey"
 
 ##Connect to Database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:\\Users\\Agilulfo\\Coding\\100dayscode_Python\\day_66\\cafes.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///full path to db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
